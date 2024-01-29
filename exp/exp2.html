@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <header> <h1>Experiment 2</h1></header>
+    <img src="../images/clouds.png" alt="cloud banner">
+    <p id="else"></p>
+    <p id="cloud">&#9729;</p>
+    
+    <script>
+        //The user inputs a color into the prompt from the list and this changes the color of the cloud which is a text element. The color inputted by the user is compared to an array. If the color does not match the list and array the cloud turns black and a message appears.
+        var pick = prompt("Pick from these colors: white, pink, blue, green, orange, purple","");
+        pick= pick.toLowerCase();
+
+        function input(){
+        var colors = ["white","pink","blue","green","orange","purple"];
+        for(var i =0;i<colors.length;i++){
+            if(pick===colors[i]){
+                return colors[i];
+            }
+           
+        }
+        document.getElementById("else").innerHTML="That wasn't one of the colors now you get a sad black cloud :(";
+        }
+        
+        document.getElementById('cloud').style.color= input();
+    </script>
+</body>
+</html>
