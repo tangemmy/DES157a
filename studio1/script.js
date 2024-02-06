@@ -50,7 +50,8 @@
             document.querySelector('#bodyPlural').focus();
         }
         else{
-            mytext =`This is ${name} and she’s here to steal your heart and claim a spot on your ${noun}. A charming feline with a fluffy coat and mesmerizing ${color1} eyes, she's not just a kitty; she's a purr-sonality powerhouse! At ${number} years young, she's the epitome of pure cuddly cuteness, and she isn't your typical ${color2} and white bellied kitty either – she's got some spunk to her!
+            mytext ="<h2>Meet your Fur-ever Friend!</h2> <img src='images/friend.png'alt='your pawfect feline' height='300' width='300'>"+
+            `This is ${name} and she’s here to steal your heart and claim a spot on your ${noun}. A charming feline with a fluffy coat and mesmerizing ${color1} eyes, she's not just a kitty; she's a purr-sonality powerhouse! At ${number} years young, she's the epitome of pure cuddly cuteness, and she isn't your typical ${color2} and white bellied kitty either – she's got some spunk to her!
 
             Special talents? Look no further! She's the reigning champion at chasing laser pointers, a pro at "helping" with your taxes (keyboard not included), and boasts a culinary degree in biscuit makin’ that would surely put your local bakery out of business! And let's not forget her undying love for ${verb}, which adds an extra sprinkle of joy to your everyday life.
             
@@ -68,7 +69,7 @@
             document.querySelector("#bodyPlural").value="";
 
         }
-        art.innerHTML="<h2>Meet your Fur-ever Friend!</h2> <img src='images/friend.png'alt='your pawfect feline' height='300' width='300'>"+mytext;
+        art.innerHTML=mytext;
     })
     
 })();
