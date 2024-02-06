@@ -14,7 +14,7 @@
         const body= document.getElementById("body").value;
         const bodyPlural= document.getElementById("bodyPlural").value;
         
-
+        document.querySelector(".showing").className="hidden";
         let mytext;
 
         if(name==''){
@@ -70,6 +70,7 @@
 
         }
         art.innerHTML=mytext;
+        art.style.fontSize = "22px";
     })
     
-})();
+})();                                             
