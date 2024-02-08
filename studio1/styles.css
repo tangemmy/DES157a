@@ -3,9 +3,11 @@ body,main,h1, h2, h3{
     padding:0;
     font-family: 'Darumadrop One';
     font-weight: 400;
+    color:darkslategrey;
 }
 header{
     padding:20px;
+    
 }
 .hidden{
     visibility:0;
@@ -13,9 +15,15 @@ header{
 }
 h1{
     font-size: 45px;
-    color:rgb(71, 53, 33);
+    color:rgb(156, 27, 27);
+    padding:10px;
+    
 }
-
+h2{
+    margin:auto;
+    padding:15px;
+    max-width: 460px;
+}
 
 input[type="text"]{
     display:block;
@@ -50,10 +58,10 @@ form {
     padding:20px;
 }
 #formstyle{
-    
     background-color: rgb(243, 243, 243);
     margin:auto;
-
+    box-shadow: 10px 10px 5px rgba(43, 78, 57, 0.709);
+  
 }
 
 label{
@@ -64,7 +72,7 @@ label{
 }
 
 footer{
-    
+    padding:20px;
     margin:auto;
     text-align: center;
 }
@@ -73,13 +81,39 @@ article{
     background-color: rgb(243, 243, 243);
     margin:auto;
     padding:10px;
+    
+}
+#green{
+    background-color: transparent;
+    height:50px;
+}
+main{
+    background-color: rgb(180, 208, 181);
 }
 body{
-    background-color: rgb(180, 208, 181);
+    background-image: url(images/pawprint.jpg);
+    
 }
 img{
     display:block;
+    margin:auto;
 }
-#art p{
-    font-size: 21px;
+.userInput{
+    color:lightcoral;
+}
+#logo{
+    float:right;
+}
+
+@media screen and (min-width: 700px) {
+    body{
+        width:900px;
+        margin:auto;
+    }
+    article{
+        width:800px;
+    }
+    #formstyle{
+        width:500px;
+    }
 }

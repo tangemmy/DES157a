@@ -13,8 +13,7 @@
         const verb= document.getElementById("verb").value;
         const body= document.getElementById("body").value;
         const bodyPlural= document.getElementById("bodyPlural").value;
-        
-        document.querySelector(".showing").className="hidden";
+        document.getElementById("art").className="showing";
         let mytext;
 
         if(name==''){
@@ -51,13 +50,13 @@
         }
         else{
             mytext ="<h2>Meet your Fur-ever Friend!</h2> <img src='images/friend.png'alt='your pawfect feline' height='300' width='300'>"+
-            `This is ${name} and she’s here to steal your heart and claim a spot on your ${noun}. A charming feline with a fluffy coat and mesmerizing ${color1} eyes, she's not just a kitty; she's a purr-sonality powerhouse! At ${number} years young, she's the epitome of pure cuddly cuteness, and she isn't your typical ${color2} and white bellied kitty either – she's got some spunk to her!
+            `This is <span class="userInput">${name}</span> and she’s here to steal your heart and claim a spot on your <span class="userInput">${noun}</span>. A charming feline with a fluffy coat and mesmerizing <span class="userInput">${color1}</span> eyes, she's not just a kitty; she's a purr-sonality powerhouse! At <span class="userInput">${number}</span> years young, she's the epitome of pure cuddly cuteness, and she isn't your typical <span class="userInput">${color2}</span> and white bellied kitty either – she's got some spunk to her! <br>
 
-            Special talents? Look no further! She's the reigning champion at chasing laser pointers, a pro at "helping" with your taxes (keyboard not included), and boasts a culinary degree in biscuit makin’ that would surely put your local bakery out of business! And let's not forget her undying love for ${verb}, which adds an extra sprinkle of joy to your everyday life.
+            Special talents? Look no further! She's the reigning champion at chasing laser pointers, a pro at "helping" with your taxes (keyboard not included), and boasts a culinary degree in biscuit makin’ that would surely put your local bakery out of business! And let's not forget her undying love for <span class="userInput">${verb}</span>, which adds an extra sprinkle of joy to your everyday life.<br>
             
-            Now, we have to admit, she does have some rather unusual quirks we must warn you about. She's quite the ${body} biter. But fear not! It doesn’t hurt – those nibbles are filled with playful intent. We don’t really know why she is so into ${bodyPlural}, but it's just another thing that makes her all the more special!
+            Now, we have to admit, she does have some rather unusual quirks we must warn you about. She's quite the <span class="userInput">${body}</span> biter. But fear not! It doesn’t hurt – those nibbles are filled with playful intent. We don’t really know why she is so into <span class="userInput">${bodyPlural}</span>, but it's just another thing that makes her all the more special!<br>
             
-            So, if you're ready for a bundle of love and joy, ${name} is ready for you!. Come meet her at the Purrfect Paws Adoption Center (123 Main Street) and fall in love! #AdoptDontShop`;
+            So, if you're ready for a bundle of love and joy,<span class="userInput">${name}</span> is ready for you!. Come meet her at the Purrfect Paws Adoption Center (123 Main Street) and fall in love! #AdoptDontShop`;
 
             document.querySelector("#name").value="";
             document.querySelector("#noun").value="";
@@ -69,8 +68,13 @@
             document.querySelector("#bodyPlural").value="";
 
         }
+        
         art.innerHTML=mytext;
         art.style.fontSize = "22px";
+        art.style.br = "2em";
+        art.style.padding="50px";
+        art.style.margintop="50px";
+
     })
     
 })();                                             
