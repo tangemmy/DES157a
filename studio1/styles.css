@@ -10,7 +10,7 @@ header{
     
 }
 .hidden{
-    visibility:0;
+    visibility:hidden;
     opacity: 0;
 }
 h1{
