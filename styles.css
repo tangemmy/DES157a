@@ -118,7 +118,7 @@ ul li a{
 }
 
 footer a{
-    color:rgb(53, 66, 120);
+    color:white;
 
 }
 footer{
@@ -126,7 +126,7 @@ footer{
     text-align: center;
     padding:30px;
     margin:auto;
-    background-color: #f2b8cd;
+    background-color: rgb(53, 66, 120);
 }
 
 @media (min-width:700px){
