@@ -57,5 +57,19 @@
     <footer>
         <a href="mailto:&#048;&#050;&#101;&#109;&#109;&#121;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">02emmyt@gmail.com</a>
     </footer>
+    <script>
+        const banner = document.querySelector("#banner");
+        const bod = document.querySelector("body");
+        banner.addEventListener("mouseover",function(){
+        
+            bod.className="colors";
+            //bod.className="";
+        })
+        bod.addEventListener("animationend", function(event) {
+        if (event.animationName === "bgcolor") {
+            bod.classList.remove("colors"); // Remove the "colors" class after animation ends
+        }
+    });
+    </script>
 </body>
 </html>

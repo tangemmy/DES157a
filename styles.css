@@ -75,7 +75,10 @@ header h2{
         background-color: #CBE9FB;
     }
 }
-#banner:hover{
+/* #banner:hover{
+    animation:bgcolor 15s linear;
+} */
+.colors{
     animation:bgcolor 15s linear;
 }
 main{
