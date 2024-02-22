@@ -1,0 +1,24 @@
+body{
+    /* background-image: url(images/everypicturemain.png); */
+    background-color:  rgb(252, 177, 170);
+    font-family: linden hill;
+}
+header{
+    margin:auto;
+    background-color: rgb(252, 177, 170);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+h1{
+    font-weight: 400;
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    
+}
+img{
+    display:block;
+    margin:auto;
+}
