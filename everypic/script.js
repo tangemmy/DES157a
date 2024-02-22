@@ -1,7 +1,7 @@
 (function(){
     "use script";
     console.log("reading js");
-    //creating areas into objects
+    //clickable areas
     const bg = document.querySelector("img");
     const lily = document.querySelector("#lily");
     const coat = document.querySelector("#coat");
@@ -10,7 +10,14 @@
     const uniqlo = document.querySelector("#uniqlo");
     const sailor = document.querySelector("#sailor");
     const sleeve = document.querySelector("#sleeve");
-
+    //overlay divs
+    const lilydiv = document.querySelector("#lilydiv");
+    const coatdiv = document.querySelector("#coatdiv");
+    const graddiv = document.querySelector("#graddiv");
+    const lipdiv = document.querySelector("#lipdiv");
+    const uniqlodiv = document.querySelector("#uniqlodiv");
+    const sailordiv = document.querySelector("#sailodiv");
+    
     //hover effect
     lily.addEventListener("mouseover",function(){
         bg.src="images/lilyglow.png";
@@ -54,4 +61,38 @@
     sleeve.addEventListener("mouseout", function(){
          bg.src="images/everypiccrop.png";
          });
+//clicking to show overlay
+
+lily.addEventListener("click",function(){
+    lilydiv.className="showing";
+    const pictures = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg'];
+    const myslide = document.querySelector("#slide");
+    let currentImage=0;
+    document.querySelector('#next').addEventListener("click",nextPhoto);
+   
+    document.querySelector('#prev').addEventListener("click",previousPhoto);
+
+    function nextPhoto(){
+        currentImage++;
+       
+        if(currentImage>pictures.length-1){
+            currentImage=0;
+        } 
+        
+        slide.src=`images/lily/${pictures[currentImage]}`;
+    }
+
+    function previousPhoto(){
+        currentImage--;
+        if(currentImage<0){
+            currentImage=pictures.length-1;
+        }
+        slide.src=`images/lily/${pictures[currentImage]}`;
+    }
+});
+
+
+  //slideshow
+  
+        
 })();
