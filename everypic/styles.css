@@ -5,35 +5,43 @@ body{
 }
 header{
     margin:auto;
-    background-color: rgb(252, 177, 170);
+    padding:0;
+    background-color: rgb(247, 235, 220);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    border-top: 10px dotted  rgb(255, 255, 255);
+    border-bottom: 10px dotted  rgb(255, 255, 255);
 }
 h1{
     font-weight: 400;
     text-align: center;
-    color:white;
-    font-size: 40px;
-    
+    color:rgb(119, 91, 60);
+    font-size: 45px;
+    margin:0;
+    padding:10px;
 }
-
+h1:hover{
+    cursor: pointer;
+}
 h2{
     padding:20px;
     padding-bottom:0;
     margin:0;
 }
-p{
+p{  font-family: hubballi;
     padding:10px;
     padding-left:20px;
     margin:0;
+    background-color: white;
+
 }
 img{
     display:block;
     margin:auto;
 }
-#lilydiv{
+.showing{
     background-color:white;
     position:absolute;
     width:500px;
@@ -44,7 +52,7 @@ img{
     z-index: 1;
 }
 
-#photobg{
+.photobg{
     position:absolute;
     background-color: black;
     width:460px;
@@ -64,20 +72,32 @@ button{
     background-color: rgb(90, 121, 94);
     padding:0;
 }
-#prev{
+button:hover{
+    cursor: pointer;
+}
+.prev{
     position:absolute;
     top:240px;
 }
-#next{
+.next{
     position:absolute;
     top:240px;
     left:460px;
 }
 .hidden{
-    visibility: hidden;
+    display: none;
     opacity:0;
 }
 .showing{
     visibility: visible;
     opacity:1;
+}
+footer p{
+    text-align: center;
+    margin:auto;
+    background-color: rgb(252, 177, 170);
+}
+a{
+    color:rgb(58, 21, 21);
+    
 }
