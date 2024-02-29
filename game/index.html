@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@400..500&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/title.png" alt="Can You Leave Debt-Free?">
+    </header>
+    <section id="game">
+        <div>
+            <img src="images/resident.png" alt="Town Mayor"  height="300" id="resident">
+            <h2>Resident</h2>
+
+            <div class="health">
+                <div id="healthbar0"><div></div></div><p id="playerhealth0">100%</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/tom.png" alt="Tom Nook" height="400" id="tom">
+            <h2>Evil Lanlord</h2>
+            <div class="health">
+                <div id="healthbar1"><div></div></div><p id="playerhealth1">100%</p>
+            </div>
+        </div>
+    </section>
+    <section id="action">
+        <div id="messages">
+            <p>First player will be randomly decided</p>
+            <button id="start">BEGIN!</button>
+        </div>
+        <button id="attack" class="hidden">Attack!</button>
+    </section>
+</body>
+</html>

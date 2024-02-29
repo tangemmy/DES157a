@@ -1,0 +1,89 @@
+body, p ,h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    background-image: url(images/field.png);
+    background-position: center;
+     background-repeat: no-repeat; 
+}
+h1{
+    
+    font-family: "BioRhyme", serif;
+   
+    margin:auto;
+    text-align: center;
+    width:400px;
+    height:300px;
+    color: #f7ce18;
+    padding-top:80px;
+    font-size: 35px;
+
+    
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+header img{
+margin:auto;
+}
+#game {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.health {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#healthbar0, #healthbar1 {
+    width: 75%;
+    height: 30px;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#healthbar0 div, #healthbar1 div{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(1,148,57,1) 0%, rgba(68,203,120,1) 50%, rgba(1,148,57,1) 100%);
+}
+
+#action {
+    max-width: 1000px;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
