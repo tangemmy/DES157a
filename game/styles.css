@@ -18,6 +18,9 @@ img {
     height: auto;
     
 }
+#tom, #resident{
+    padding-top:100px;
+}
 h2 {
     margin: 0;
     font-size: 1.2em;
@@ -27,6 +30,10 @@ h2 {
 }
 header img{
 margin:auto;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+
 }
 #game {
     display: flex;
@@ -65,7 +72,7 @@ margin:auto;
 #action {
     max-width: 1000px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     margin: auto;
     background-color: blanchedalmond;
     border-radius: 100px;
@@ -94,3 +101,17 @@ margin:auto;
 #messages p {
     padding:10px;
 }
+#attack1{
+    margin:auto;
+    background-color: rgb(93, 200, 224);
+    color:white;
+    border-radius: 20px;
+    border:none;
+    padding:10px;}
+#attack2{
+    margin:auto;
+    background-color: rgb(224, 93, 126);
+    color:white;
+    border-radius: 20px;
+    border:none;
+    padding:10px;}
