@@ -101,6 +101,7 @@ transform:translateX(-50%);
 #messages p {
     padding:10px;
 }
+
 #attack1{
     margin:auto;
     background-color: rgb(93, 200, 224);
@@ -115,3 +116,10 @@ transform:translateX(-50%);
     border-radius: 20px;
     border:none;
     padding:10px;}
+#reset{
+    background-color: green;
+    color:white;
+    border-radius: 20px;
+    border:none;
+    padding:10px
+}
