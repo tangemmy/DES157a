@@ -14,7 +14,7 @@
     let defenderIndex;
 
     const gameData = {
-		monsters: ['resident', 'tom'],
+		monsters: ['Resident', 'Tom'],
 		health: [100, 100],
 		attack: [5, 30, 40, 50, 60],
         attackMessage: [
