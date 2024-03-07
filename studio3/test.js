@@ -105,7 +105,7 @@
             monster, so you can check it's health and the name of the attacking monster, so you can
             use it in the message. */
             checkWinningCondition(defenderIndex, attacker);
-           
+           type1();
         }, 2500);
         function checkWinningCondition(enemy, attackingMonster){
             //Wait three seconds, so users can read the screen and the animation can finish.
@@ -142,5 +142,16 @@
             }, 3000);
         }
     }
-  
+    var x = 0;
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    function type1() {
+        for(let i=0;i<attackMessage.length;i++){
+            if (i < attackMessage[i].length) {
+            document.getElementById("messages").innerHTML += attackMessage[i].charAt(x);
+            x++;
+            setTimeout(typeWriter, speed);
+             }
+        }
+    }
 })();
