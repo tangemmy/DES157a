@@ -9,12 +9,15 @@
     const attack1 = document.querySelector('#attack1');
     const attack2 = document.querySelector('#attack2');
 
+    const voice1 = new Audio('sounds/Voice1.mp3');
+    const voice2 = new Audio('sounds/Voice0.mp3');
+
     let attacker;
     let defender;
     let defenderIndex;
 
     const gameData = {
-		monsters: ['Resident', 'Tom'],
+		monsters: ['resident', 'tom'],
 		health: [100, 100],
 		attack: [5, 30, 40, 50, 60],
         attackMessage: [
@@ -73,7 +76,11 @@
         document.querySelector(`#${attacker}`).className = `attack${thisAttack}`;
         // put the correct message in the message window
         messages.innerHTML = `<p><strong>${attacker}</strong>: ${gameData.attackMessage[thisAttack]}</p>`;
-        
+        if(gameData.index == 0) {
+            voice1.play();
+        } else {
+            voice2.play();
+        }
         /* wait 2.5 seconds so the CSS attacking animation can finish and the user can
         read the attack message*/
         setTimeout(function(){
