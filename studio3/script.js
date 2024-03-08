@@ -12,7 +12,7 @@
     const voice1 = new Audio('sounds/Voice1.mp3');
     const voice2 = new Audio('sounds/Voice0.mp3');
     const music = new Audio('sounds/niceSurprise.mp3');
-    music.loop= true;
+    music.loop= true; //loop bgm
 
     let attacker;
     let defender;
@@ -54,8 +54,7 @@
 
     function monsterAttack(){
         
-        /* If gameData.index is 1, the statement is true and it must
-        be ployer 2's turn. Set the attacker to player 2 and the defender to player 1.
+        /* If gameData.index is 1, the statement is true and it is player2's turn. Set the attacker to player 2 and the defender to player 1.
         Set the defenderIndex to zero. If this statement is false, do the opposite. */
         if(gameData.index){
             attacker = gameData.monsters[1];
@@ -93,9 +92,7 @@
             // put the correct defense animation on the defending monster
             document.querySelector(`#${defender}`).className = `defend${thisdDefense}`;
 
-            /* If there is no defense, update the healthbar of the defending monster by subtracting
-            total attack from it's current health. If there was partial defense subtract half the
-            health. If a 2 was rolled, nothing happens to the healthbar, because it was total defense. */
+            /* If no defense, update the healthbar of the defender by subtracting total attack from it's current health. If partial defense subtract half the health. If a 2 rolled, nothing happens to the healthbar */
             if( thisdDefense == 0){
                 gameData.health[defenderIndex] = gameData.health[defenderIndex] - gameData.attack[thisAttack];
             } else if( thisdDefense == 1 ){
@@ -104,16 +101,14 @@
 
             // this variable is used to ensure that the data is convered to a number and is rounded down.
             let health = Math.floor(parseFloat(gameData.health[defenderIndex]));
-            /* you can't have less than zero health. That would screw up the health bar, so if the
-            health is less than zero, set it to zero. */
+            /* if the health is less than zero, set it to zero. */
             if(health < 0) {health = 0;}
-            // Set the width of the healthbar to reflect the correct percentage.
+            // Set the width of the healthbar to percentage.
             document.querySelector(`#healthbar${defenderIndex} div`).style.width = `${health}%`;
             // set the number next to the health bar to reflect the correct percentage.
             document.querySelector(`#playerhealth${defenderIndex}`).innerHTML = `${health}%`;
 
-            /* check to see if the attacking monster has won, passing in the index of the dending
-            monster, so you can check it's health and the name of the attacking monster, so you can
+            /* check to see if the attacker has won, passing in the index of the defender, so you can check it's health and the name of the attacker, so you can
             use it in the message. */
             checkWinningCondition(defenderIndex, attacker);
            
@@ -124,10 +119,9 @@
                 //Remove the animation classes from the monsters...
                 player1.removeAttribute('class');
                 player2.removeAttribute('class');
-                /* As before, we need to make sure the health of the defending
-                monster is converted into a number and rounded down. */
+                /* health of the defending monster is converted into a number and rounded down. */
                 const health = Math.floor(parseFloat(gameData.health[enemy]));
-                // If the health is less than 1, the winning condition has been met for the attacking monster
+                // If the health is less than 1, the winning condition has been met for the attacker
                 if( health < 1 ){
                     /* Set the message about winning */
                     messages.innerHTML = `<p><strong>${attackingMonster}</strong> has won the battle! start another battle</p>`;

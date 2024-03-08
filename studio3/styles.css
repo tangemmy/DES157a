@@ -131,27 +131,22 @@ transform:translateX(-50%);
 }
 
 .attack0 {
-    /* animation: veryweak 1s ease-in-out 2; */
     animation: shake 1s ease-in-out 2;
 }
 
 .attack1 {
-    /* animation: weak 1s ease-in-out 2; */
     animation: shake 1s ease-in-out 2;
 }
 
 .attack2 {
-    /* animation: medium 1s ease-in-out 2; */
     animation: shake 1s ease-in-out 2;
 }
 
 .attack3 {
-    /* animation: strong 1s ease-in-out 2; */
     animation: shake 1s ease-in-out 2;
 }
 
 .attack4 {
-    /* animation: massive 1s ease-in-out 2; */
     animation: shake 1s ease-in-out 2;
 }
 
