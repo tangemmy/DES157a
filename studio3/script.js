@@ -11,11 +11,13 @@
 
     const voice1 = new Audio('sounds/Voice1.mp3');
     const voice2 = new Audio('sounds/Voice0.mp3');
+    const music = new Audio('sounds/niceSurprise.mp3');
+    music.loop= true;
 
     let attacker;
     let defender;
     let defenderIndex;
-
+      
     const gameData = {
 		monsters: ['resident', 'tom'],
 		health: [100, 100],
@@ -36,6 +38,8 @@
 	};
 
     startBtn.addEventListener('click', function(){
+        music.play();
+        
         gameData.index = Math.round(Math.random());
         messages.innerHTML = `<p>Get ready! <strong>${gameData.monsters[gameData.index]}</strong> was randomly selected to attack first. Click the attack button to see what happens.</p>`;
         startBtn.className="hidden";

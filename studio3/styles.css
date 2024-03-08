@@ -6,7 +6,7 @@ body{
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
     color:rgb(66, 53, 33);
-    background-image: url(images/field1.png);
+    background-image: url(images/field.png);
     /* background-position: center; */
      background-repeat: no-repeat; 
      background-size:cover; 
@@ -204,3 +204,13 @@ transform:translateX(-50%);
     from { width: 0 }
     to { width: 100% }
   }
+
+  a{
+    color:rgb(94, 60, 45);
+  }
+  footer{
+    margin:auto;
+    padding-left:10px;
+  }
+
+  
