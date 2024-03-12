@@ -18,6 +18,7 @@ header{
     color:white;
     font-size: 20px;
     text-shadow:10px 10px 10px rgb(93, 52, 52) ;
+    font-weight: 400;
 }
 p{
     line-height: 1.5em;
