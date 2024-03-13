@@ -2,15 +2,20 @@ body, h1, h3, p, img{
     margin:0;
     padding:0;
     font-family: 'silkscreen';
+    font-weight: 500;
 }
 body{
     max-width: 700px;
     margin:auto;
     /* background-color:rgb(205, 94, 127); */
     background: rgb(255,235,226);
-background: linear-gradient(0deg, rgba(255,235,226,1) 0%, rgba(229,164,197,1) 86%);
+    background: linear-gradient(0deg, rgba(255,235,226,1) 0%, rgba(229,164,197,1) 86%);
     color:rgb(55, 43, 37);
     
+}
+h2{
+    margin:0;
+    color:rgb(138, 53, 67);
 }
 header{
     padding:20px;
