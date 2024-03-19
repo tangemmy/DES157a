@@ -32,14 +32,11 @@ input[type="text"]{
     border-radius: 5px;
     margin:0;
     
-    
 }
 
 input[type="text"]:focus {
     
     background-color: white;
-    
-   
 }
 input[type="submit"]{
     padding:10px;

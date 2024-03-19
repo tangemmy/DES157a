@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL - Madlibs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <img src="images/home.PNG" alt="homescreen" usemap="#image-map" id="home">
+        <map name="image-map">
+            <area alt="door" id="door" href="#" coords="355,569,356,500,355,391,355,267,355,250,519,249,519,570,375,570" shape="poly">
+            <area  alt="pot" id="pot" href="#" coords="323,584,307,595,291,595,272,593,262,589,253,540,244,538,244,518,260,510,275,507,281,506,281,487,257,471,248,459,252,453,243,417,253,415,249,391,261,389,257,362,266,357,260,341,272,320,291,305,300,318,304,329,311,333,307,368,318,371,324,389,332,413,329,445,313,472,297,482,296,503,331,510,333,535,325,536" shape="poly">
+            <area alt="tree" id="tree" href="#" coords="872,1,883,20,900,30,914,28,923,40,956,52,973,52,992,65,1045,139,1107,173,1154,188,1185,245,1198,254,1198,57,1197,1" shape="poly">
+        </map>
+        <div id="formdiv" class="hidden">
+            
+            <div id="formstyle">
+                <h1>Purrfect Paws Adoption Center</h1>
+                <h2>Adoption Request Form</h2>
+                <p>Please fill out the following truthfully based on instinct so we may accurately pair you with your purrfect partner.</p>
+                <form>
+                    <label for="name">Any Name</label>
+                    <input type="text" id="name" required>
+                        
+                    <label for="noun">Noun</label>
+                    <input type="text" id="noun" required>
+                        
+                    <label for="color1">Color</label>
+                    <input type="text" id="color1" required>
+                        
+                    <label for="number">A number</label>
+                    <input type="text" id="number" required>
+                    
+                    <label for="color2">Pick One</label>
+                    <select id="color2" required>
+                            <option value="random">???</option>
+                            <option value="pink">Pink</option>
+                            <option value="blue">Blue</option>
+                            <option value="orange">Purple</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                    </select>
+                        
+                    <label for="verb">A verb ending in "ing"</label>
+                    <input type="text" id="verb" required>
+                        
+                    <label for="body">Pick a body part</label>
+                    <input type="text" id="body" required>
+                        
+                    <label for="bodyPlural">Plural of same body part</label>
+                    <input type="text" id="bodyPlural" required>
+                        
+
+                    <input type="submit" value="Match Me!">
+                </form>
+                    
+            </div>
+            <div id="green"></div>
+            <article id="art" class="hidden"></article>
+            <img src="images/desk.PNG" alt="desk" id="desk">
+        </div>
+        
+    
+
+        <footer>
+            <p>Designed by Emmy Tang</p>
+            <p><a href="sources.html">Credits</a></p>
+        </footer>
+    </main>
+</body>
+</html>
