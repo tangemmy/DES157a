@@ -13,6 +13,11 @@ img{
     display:block;
     margin:auto;
 }
+#cat{
+    border: 3px solid rgb(43, 43, 43);
+
+    box-shadow: 10px 10px 5px rgba(132, 70, 74, 0.259);
+}
 .hidden{
     display: none;
 }
@@ -20,7 +25,6 @@ img{
 visibility: visible;
 }
 #back{
-    z-index: 3;
     color:white;
     padding:15px;
     padding-left:20px;
@@ -30,9 +34,12 @@ visibility: visible;
     cursor: pointer;
     color:rgb(255, 118, 118);
 }
+h1{
+    color:brown;
+}
 /*Form Styling*/
     /*logo on form*/
-    h1{
+    #formstyle h1{
         color:brown;
         padding-top: 20px;
         padding-left:20px;
@@ -42,7 +49,7 @@ visibility: visible;
         font-size: 18px;
     }
     /*adoption form title*/
-    h2{
+    #formstyle h2{
         padding-left: 20px;
         padding-bottom:10px;
     }
@@ -118,6 +125,21 @@ visibility: visible;
     top:0;
     left:150px;
     z-index: -1;
+}
+/*Results*/
+.art{
+    width:500px;
+    background-color: white;
+    position:absolute;
+    top:40px;
+    left:500px;
+}
+#cat{
+    display:block;
+    margin:auto;
+}
+.userInput{
+    color:lightcoral;
 }
 footer{
     font-family: 'Darumadrop One','gill sans';
