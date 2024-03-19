@@ -13,11 +13,11 @@ img{
     display:block;
     margin:auto;
 }
-#cat{
+/* #cat{
     border: 3px solid rgb(43, 43, 43);
 
     box-shadow: 10px 10px 5px rgba(132, 70, 74, 0.259);
-}
+} */
 .hidden{
     display: none;
 }
@@ -111,7 +111,7 @@ h1{
     
     }
     #formdiv{
-        padding-top: 5%;
+        padding-top: 30px;
         /* position:relative; */
     } 
    
