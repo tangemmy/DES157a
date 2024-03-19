@@ -13,6 +13,8 @@
     const doorbell = new Audio("sounds/opendoor.mp3");
     const bush = new Audio("sounds/catbush.mp3");
     const treecat = new Audio("sounds/treemeow.mp3");
+    const pur = new Audio("sounds/pur.mp3");
+    const paper = new Audio("sounds/paper.mp3");
     
     // Select clickable areas
     const door = document.querySelector("#door");
@@ -83,6 +85,8 @@
     
     myForm.addEventListener("submit", function(event){
         event.preventDefault();
+        paper.play();
+        pur.play();
         const name = document.getElementById("name").value;
         const noun= document.getElementById("noun").value;
         const color1= document.getElementById("color1").value;
