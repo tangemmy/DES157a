@@ -19,6 +19,17 @@ img{
 .showing{
 visibility: visible;
 }
+#back{
+    z-index: 3;
+    color:white;
+    padding:15px;
+    padding-left:20px;
+    font-size:25px;
+}
+#back:hover{
+    cursor: pointer;
+    color:rgb(255, 118, 118);
+}
 /*Form Styling*/
     /*logo on form*/
     h1{
