@@ -87,6 +87,7 @@
         event.preventDefault();
         paper.play();
         pur.play();
+        back.className="hidden";
         const name = document.getElementById("name").value;
         const noun= document.getElementById("noun").value;
         const color1= document.getElementById("color1").value;
